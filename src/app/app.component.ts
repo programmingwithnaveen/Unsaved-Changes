@@ -8,13 +8,12 @@ import { Component } from '@angular/core';
  </div>
   <div  align="center">
   <nav>
-    <a routerLink="/page1" routerLinkActive="active">Page1</a>
-    <a routerLink="/page2" routerLinkActive="active">Page2</a>
+    <a routerLink="/page1" routerLinkActive="active">Name</a>
+    <a routerLink="/page2" routerLinkActive="active">Email</a>
   </nav>
   <router-outlet></router-outlet>
   </div>
-`,
-  styleUrls: ['./app.component.css']
+`
 })
 export class AppComponent {
   title = 'app';

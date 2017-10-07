@@ -2,7 +2,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DialogService } from './dialog.service';
 import { Confirmation } from './confirmation.component';
 import { CanDeactivateGuard } from './can-deactivate-guard.service';
-
+import { FormsModule } from '@angular/forms';
 import { Page2Component } from './page2.component';
 import { Page1Component } from './page1.component';
 import { RouterModule, Routes } from '@angular/router';
@@ -25,6 +25,7 @@ const appRoutes: Routes = [
   imports: [
     NgbModule.forRoot(),
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [DialogService, CanDeactivateGuard],
